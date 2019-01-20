@@ -27,6 +27,42 @@ body {
 /*background-color*/
 .primary-background-color{
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: rgb(22, 19, 19);
+}
+
+/*logo is inside the primary background-color*/
+.primary-logo{
+    width: 275px;
+    height: 275px;
+    border: 4px solid rgb(58, 55, 55);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*logo text*/
+.primary-logo-text{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+/*text is used to make a logo*/
+.primary-new-text{
+    color: rgb(58, 55, 55);
+    font-size: 4rem;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
 }
