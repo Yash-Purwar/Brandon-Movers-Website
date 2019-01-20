@@ -21,7 +21,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /*background-color*/
@@ -65,4 +65,265 @@ body {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -20%);
+}
+
+/*fron-image*/
+.front-image{
+    background-image: url("Images/adults-black-and-white-crowd-379958.jpg");
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media screen and (max-width: 500px){
+    .front-image{
+        height: 700px;
+    }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transition: .5s;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+.active {
+  background-color: transparent;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*responsive nav bars*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/*overlap the background color*/
+.overlap-background-color{
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    position: relative;
+    width: 53%;
+    height: 700px;
+    color: white;
+}
+
+/*responsive from phone and tab*/
+@media screen and (max-width: 979px){
+    .overlap-background-color{
+        position: relative;
+        left: 50%;
+        float: none;
+        width: 100%;
+        transform: translate(-50%, 0);
+    }
+}
+
+/*responsive from phone and tab*/
+@media screen and (max-width: 500px){
+    .overlap-background-color{
+        position: relative;
+        left: 50%;
+        height: 575px;
+        float: none;
+        width: 100%;
+        transform: translate(-50%, 0);
+    }
+}
+
+/*text on the black transparent color*/
+.overlap-text{
+    position: relative;
+    top: 200px;
+    right: 50px;
+    font-size: 4.5rem;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 979px){
+    .overlap-text{
+        float: none;
+        text-align: center;
+        position: relative;
+        right: 0%;
+        font-weight: bold;
+        left: 30%;
+        font-size: 10vw;
+        top: 24%;
+        transform: translate(-30%, -34%);
+    }
+}
+
+.overlap-text-part{
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 90px;
+}
+
+@media screen and (max-width: 979px){
+    .overlap-text-part{
+        float: none;
+        text-align: center;
+        position: relative;
+        right: 0%;
+        left: 30%;
+        font-size: 8vw;
+        top: 24%;
+        transform: translate(-30%, -34%);
+    }
+}
+
+.overlap-para{
+    float: left;
+    font-size: 1.3rem;
+    position: relative;
+    top: 220px;
+    text-align: left;
+    left: 15px;
+    right: 65px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 979px){
+    .overlap-para{
+        float: none;
+        text-align: center;
+        margin-top: -10%;
+        left: 5px;
+    }
+}
+
+.position{
+    position: relative;
+    float: right;
+    right: 0px;
+    top: 280px;
+}
+
+@media screen and (max-width: 979px){
+    .position{
+       float: none;
+       right: 0;
+       top: 280px;
+       text-align: center;
+    }
+}
+
+.btn a{
+    width: 120px;
+    height: 50px;
+    padding: 14px 16px;
+    color: white;
+    -webkit-transition: .5s;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+}
+
+.btn a:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
+.content-max-width{
+    max-width: 900px;
+    margin: auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    grid-gap: 50px;
+}
+
+.primary-boxes{
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    background: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.box-heading{
+    color: black;
+    font-size: 130%;
+    font-weight: bold;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.box-serial-no{
+    color: black;
+    font-size: 200%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.box-overlap-heading{
+    float: left;
+    margin: 30px 15px 0 15px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.box-overlap-para{
+    float: left;
+    margin: 20px 15px 0 15px;
+    text-align: left;
+    color: #c0c0c0;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
 }
